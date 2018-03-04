@@ -17,8 +17,6 @@ from django.conf.urls import url,include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+	url(r'^admin/', admin.site.urls),
 	url(r'^item/', include('django_apps.dbms.urls', namespace='dbms')), #Namespace used only with Sets of Urls
-
-
 ]

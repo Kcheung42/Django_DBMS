@@ -11,11 +11,19 @@ class ItemMaster(models.Model):
 	pass
 
 class StoreMaster(models.Model):
+	name = models.CharField(max_length=35, unique=True)
+	address = models.CharField(max_length=35)
 	# Fields
 	# Relation
 	pass
 
-class Warehouse(models.Model):
+class Inventory(models.Model):
+	sku = modles.ForeignKey(ItemMaster)
+	# Fields
+	# Relation
+	pass
+
+class SoldInventory(models.Model):
 	# Fields
 	# Relation
 	pass

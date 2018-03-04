@@ -8,3 +8,4 @@ class ItemMasterAdmin(admin.ModelAdmin):
 		model = ItemMaster
 
 admin.site.register(ItemMaster, ItemMasterAdmin)
+
